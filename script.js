@@ -2,6 +2,9 @@ let input = document.getElementById('inputValue');
 let output = document.getElementById('output');
 let humidity = document.getElementById('humidity');
 function showInfo(){
+    function load(){
+        $(".loader-wrapper").fadeOut("slow");
+   }load();
     fetch('https://api.openweathermap.org/data/2.5/weather?q='+input.value+'&appid=2c11cc38f5a4850231888e39ff9fd5fa&units=metric')
     .then(resp => resp.json())
     .then(data => {
