@@ -37,6 +37,7 @@ input[type='submit']{
     font-size: 20px;
     border:none;    
     border-radius: 5px;
+    padding: 5px;
 }
 .content{
     font-family: 'Ubuntu', sans-serif;
