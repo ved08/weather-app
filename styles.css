@@ -19,6 +19,15 @@ body{
   justify-content: center;
   align-items: center;
 }
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: 50%;                       /******** <- Remove this line *********/
+  border: 4px solid #Fff;
+  animation: loader 2s infinite ease;
+}
 .input{
     text-align: center;
     margin-top: 10%;
